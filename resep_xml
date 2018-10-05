@@ -1,0 +1,42 @@
+ <?xml version="1.0"?>
+<recipes>
+<recipe>
+<recipe_id>20</recipe_id>
+<recipe_name>Grilled Flounder</recipe_name>
+<recipe_poster>Billy Bob</recipe_poster>
+<recipe_quick_info>20 minutes prep, 40 minutes total time</recipe_quick_info>
+<recipe_link>http://www.example.com/</recipe_link>
+</recipe>
+ 
+<recipe>
+<recipe_id>19</recipe_id>
+<recipe_name>Grilled Flounder</recipe_name>
+<recipe_poster>Billy Bob</recipe_poster>
+<recipe_quick_info>20 minutes prep, 40 minutes total time</recipe_quick_info>
+<recipe_link>http://www.example.com/</recipe_link>
+</recipe>
+ 
+<recipe>
+<recipe_id>18</recipe_id>
+<recipe_name>Grilled Flounder</recipe_name>
+<recipe_poster>Billy Bob</recipe_poster>
+<recipe_quick_info>20 minutes prep, 40 minutes total time</recipe_quick_info>
+<recipe_link>http://www.example.com/</recipe_link>
+</recipe>
+ 
+<recipe>
+<recipe_id>17</recipe_id>
+<recipe_name>Grilled Flounder</recipe_name>
+<recipe_poster>Billy Bob</recipe_poster>
+<recipe_quick_info>20 minutes prep, 40 minutes total time</recipe_quick_info>
+<recipe_link>http://www.example.com/</recipe_link>
+</recipe>
+ 
+<recipe>
+<recipe_id>16</recipe_id>
+<recipe_name>Grilled Flounder</recipe_name>
+<recipe_poster>Billy Bob</recipe_poster>
+<recipe_quick_info>20 minutes prep, 40 minutes total time</recipe_quick_info>
+<recipe_link>http://www.example.com/</recipe_link>
+</recipe>
+</recipes>
