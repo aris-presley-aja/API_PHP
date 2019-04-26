@@ -1,0 +1,46 @@
+<?php
+ 
+// di modifikasi oleh yopi ardinal 23.02.2018
+// kode asli saya ambil dari berbagai sumber yang rata2 memakai KlikBCA sebagai sumber data.
+// saya modifikasi ambil jadwal sholat dari situs kemenag
+ 
+function bacaHTML($url){
+// inisialisasi CURL
+$data = curl_init();
+// setting CURL
+curl_setopt($data, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($data, CURLOPT_URL, $url);
+// menjalankan CURL untuk membaca isi file
+$hasil = curl_exec($data);
+curl_close($data);
+return $hasil;
+}
+ 
+echo "Yuk Belajar Teknik Grabbing <br><br>";
+echo "1. Mengambil Semua Jadwal Sholat untuk kota Jakarta <br><br>";
+ 
+$kodeHTML = bacaHTML('http://sihat.kemenag.go.id/waktu-sholat');
+$pecah = explode('<table class="table_jadwal_depan" border="1" style="margin-top:10px;">', $kodeHTML);
+$pecahLagi = explode('</table>', $pecah[1]);
+ 
+echo "<table border='1'>";
+echo $pecahLagi[0];
+echo "</table>";
+ 
+echo "<br>2. Mengambil Jadwal Sholat hanya Subuh dan Isya untuk kota Jakarta <br>";
+ 
+// Contoh Ambil waktu Iubuh saja //
+$ambilsubuh = explode('<td>Shubuh</td>', $pecahLagi[0]);
+$ambilsubuh2 = explode('</td>', $ambilsubuh[1]);
+ 
+echo "<br> Waktu Subuh : ";
+echo $ambilsubuh2[0];
+ 
+// Contoh Ambil waktu Ashar saja //
+$ambilashar = explode('<td>Ashar</td>', $pecahLagi[0]);
+$ambilashar2 = explode('</td>', $ambilashar[1]);
+ 
+echo "<br> Waktu Isya : ";
+echo $ambilashar2[0];
+ 
+?>
